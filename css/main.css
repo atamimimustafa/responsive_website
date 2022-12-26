@@ -8,7 +8,6 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-family: 'Vollkorn', serif;
-    height: 4000px;
 }
 .tex_center {
     text-align: center;
@@ -28,7 +27,7 @@ body {
     float: right;
 }
 .h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     color: rgb(46, 43, 43);
 }
 .resp_paragraph {
@@ -37,6 +36,10 @@ body {
 }
 .images {
     margin: 1%;
+}
+.list_style {
+    list-style-type: none;
+    padding: 0;
 }
 @media (max-width:767px) {
     .resp_paragraph {
@@ -76,12 +79,11 @@ body {
 /* Start main_header */
 .main_header {
     width: 100%;
-    height: 300px;
+    height: 400px;
     background: url('../images/header_background.jpg') no-repeat top center;
     background-size: cover;
     position: relative;
     color: #fff;
-
 }
 .main_header article {
     position: absolute;
@@ -89,12 +91,12 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(246, 253, 255, 0.4);
+    background-color: rgba(24, 49, 83, 0.9);
     margin: 0 auto;
 }
 .main_header article h1 {
     font-size: 50px;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 .main_header article p {
     width: 48%;
@@ -106,7 +108,7 @@ body {
 }
 @media (max-width:440px){
     .main_header article h1 {
-        margin-top: 30px !important;
+        margin-top: 80px !important;
     }
     .main_header article p {
         width: 80%;
@@ -123,11 +125,6 @@ body {
     }
 }
 /* End main_header */
-
-
-
-
-
 
 
 
@@ -173,13 +170,9 @@ body {
 /* End features */
 
 
-
-
-
-
 /* Start about us */
 .about_us {
-    background-color: rgb(247, 247, 247);
+    background-color: rgb(209, 217, 221);
     padding: 10px;
 }
 .about_us .resp_paragraph {
@@ -191,20 +184,14 @@ body {
 
 /* Start our work */
 .our_work  {
-    padding-top: 20px;
-    height: 1150px;
-    background-color: rgb(227, 222, 255);
+    padding: 30px 0;
 }
 .our_work .images {
     height: 300px;
-    float: left;
     margin: 0 !important;
     padding: 5px 0;
 }
 @media (max-width:540px) {
-    .our_work {
-       height: 2750px !important;
-    }
     .images {
         width: 95% !important;
         height: 290px !important;
@@ -212,7 +199,6 @@ body {
 }
 @media (max-width:767px) {
     .our_work {
-        height: 3000px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -220,19 +206,6 @@ body {
     }
     .our_work .images{
         width: 80%;
-    }
-}
-@media (min-width:768px) {
-    .our_work {
-        height: 1650px;
-    }
-}
-@media (min-width:992px) {
-    .our_work {
-        height: 1200px;
-    }
-    .our_work .images {
-        height: 350px;
     }
 }
 .our_work .images img {
@@ -246,24 +219,272 @@ body {
     -o-border-radius: 5px;
 }
 .our_work .images img:hover {
-    animation-name: move_img;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-direction: alternate;
-    animation-delay: 0.3s;
+    animation: move_img 1s linear 0.3s infinite alternate;
+    -webkit-animation: move_img 1s linear 0.3s infinite alternate;
 }
 @keyframes move_img {
     from {
         top: -5px;
         box-shadow: 2px 2px 2px 2px rgb(75, 132, 179),
         -5px 2px 2px 2px rgb(75, 132, 179);
-}
+    }
     to {
         top: 5px;
         box-shadow: 2px 2px 2px 2px rgb(75, 132, 179),
         -5px 2px 2px 2px rgb(75, 132, 179);
-}
+    }
 }
 
 /* End our work */
+
+
+/* Start our priecing */
+.pricing_plan {
+    background-color: #183153;
+    color: #fff;
+    padding: 100px 0;
+}
+.pricing_plan .h1 {
+    color: #fff;
+    margin:  0;
+    margin-bottom: 80px;
+}
+.pricing_plan article {
+    border: 2px solid #fff;
+    width: calc(98% / 3);
+    font-size: 25px;
+    padding-top: 30px;
+}
+.pricing_plan article:not(:first-of-type) {
+    margin-left: 1%;
+}
+@media (max-width:767px) {
+    .pricing_plan article {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+.pricing_plan article h3 {
+    margin: 5px;
+    font-size: 30px;
+}
+.pricing_plan article span {
+    opacity: 0.6;
+}
+.pricing_plan article ul li {
+    line-height: 2;
+}
+/* End our priecing */
+
+
+
+/* Start what they said */
+.they_say {
+    padding: 30px 0;
+    font-size: 20px;
+}
+.they_say .h1 {  
+    margin: 50px 0;
+}
+.they_say article {
+    float: left;
+    background-color: rgb(209, 217, 221);
+    padding: 20px;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.they_say article:first-of-type {
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 20px;
+}
+.they_say article:not(first-of-type) {
+    width: 35%;
+    margin-left: 15%;
+}
+.they_say article:last-of-type {
+    margin-left: 1%;
+}
+@media (max-width:767px) {
+    .they_say article{
+        width: 95% !important;
+        margin-left: 2.5% !important;
+        margin-bottom: 10px !important;
+    }
+}
+@media (min-width:768px) and (max-width:991px) {
+    .they_say article:first-of-type {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .they_say article:not(first-of-type) {
+        width: 48%;
+        margin-left: 2%;
+    }
+    .they_say article:last-of-type {
+        margin-right: 1%;
+    }
+}
+.they_say article .images {
+    width: 80px !important;
+    height: 80px;
+    margin-right: 20px;
+}
+@media (max-width:767px) {
+    .they_say article .images {
+        float: none;
+        margin: auto;
+        height: 100px !important;
+        width: 100px !important;
+        margin-top: 20px;
+    }
+}
+.they_say article .images img {
+    width: 100%;
+    height:100% ;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.they_say article h3 {
+    text-align: left;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-size: 30px;
+}
+@media (max-width:767px) {
+    .they_say article h3 {
+        text-align: center;
+    }
+}
+.they_say article span {
+    opacity: 0.6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width:767px) {
+    .they_say article span {
+        float: none;
+    }
+}
+.they_say article p {
+    line-height: 1.6;
+    text-align: left;
+    float: left;
+}
+@media (max-width:767px) {
+    .they_say article p {
+        float: none;
+        text-align: center;
+        font-size: 25px;
+    }
+}
+
+/* End what they said */
+
+
+/* Start product information */
+.product_info { 
+    background-color: rgb(209, 217, 221);
+    padding: 50px 0;
+    font-size: 22px;
+}
+.product_info .h1 {
+    font-size: 40px;
+    margin: 20px 0;
+    margin-bottom: 50px;
+}
+.product_info ul {
+    margin-bottom: 0;
+}
+.product_info ul li {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(171, 182, 187);
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.product_info .selected {
+    background-color: #fff;
+    color: green;
+}
+@media (max-width:767px) {
+    .product_info ul li {
+        background-color: #183153;
+        color: #fff;
+        border-bottom: 1px solid rgb(92, 90, 90);
+        display: block;
+        text-align: center;
+    }
+    .product_info ul li:hover {
+        background-color: rgb(250, 250, 250);
+        color: green;
+    }
+    .product_info .content {
+        text-align: center;
+    }
+}
+.product_info .content {
+    background-color: #fff;
+}
+.product_info article {
+    line-height: 1.6;
+    font-size: 22px;
+    padding: 10px;
+}
+.product_info
+.history,
+.specific,
+.technic,
+.review {
+    display: none;
+}
+/* End product information */
+
+
+
+/* Start footer */
+footer {
+    font-size: 25px;
+    color: #fff;
+    background-color: #183153;
+    padding: 50px 0;
+}
+footer section:first-of-type {
+    width: 40%;
+}
+footer section:not(:first-of-type) {
+    font-size: 40px;
+    text-align: right;
+}
+@media (max-width:767px) {
+    footer section:first-of-type {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    footer section:not(:first-of-type) {
+        text-align: center;
+    }
+}
+footer section a  {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+footer section i {
+    cursor: pointer;
+    color: #fff;
+}
+/* End footer */
