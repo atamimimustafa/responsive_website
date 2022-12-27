@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
     <!-- Import google fonts -->
@@ -15,7 +16,7 @@
 </head>
 <body>
     <!-- Start header -->
-    <header class="main_header tex_center">
+    <header class="main_header tex_center white_color">
         <article>
             <div class="container ">
                 <h1>Choose Your Plane</h1>
@@ -26,6 +27,22 @@
         </article>
     </header>
     <!-- End header -->
+
+    <!-- Start navbar -->
+    <nav>
+            <h2 class="h1 float-l white_color"><span>Ata</span>mimi $oft</h2>
+            <p class="float-l icon white_color"> <i class="fa-solid fa-bars"></i> </p>
+            <ul class="list_style home_list float-l">
+                <li ><a  href="#">Home</a></li>
+                <li ><a href="#about_us">About Us </a></li>
+                <li ><a href="#work">Our Work</a></li>
+                <li ><a id="hre" href="#pricing">Our Pricing</a></li>
+                <li ><a href="#info">Product Info</a></li>
+            </ul>
+            <div class="clear_fix"></div>
+
+    </nav>
+    <!-- End navbar -->
 
     <!-- Start features -->
     <section class="features">
@@ -49,7 +66,7 @@
     <!-- End features -->
 
     <!-- Start about us -->
-    <section class="about_us">
+    <section id="about_us" class="about_us">
         <div class="container">
             <h2 class="h1 tex_center">About Us</h2>
             <p class="resp_paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, voluptatem provident. Molestiae, architecto quas laborum, quasi recusandae ut culpa nihil molestias repudiandae eveniet nemo aspernatur quibusdam deleniti qui minima? Accusamus.</p>
@@ -59,7 +76,7 @@
     <!-- End about us -->
 
     <!-- Start our work -->
-    <section class="our_work tex_center">
+    <section id="work" class="our_work tex_center">
         <h2 class="h1 tex_center">Our Works</h2>
         <div class="images float-l">
             <img src="./images/img_1.gif" alt="img_1">
@@ -94,9 +111,9 @@
     <!-- End our work -->
 
     <!-- Start pricing plans -->
-    <section class="pricing_plan tex_center">
+    <section id="pricing" class="pricing_plan white_color tex_center">
        <div class="container">
-            <h2 class="h1">Our pricing Plans</h2>
+            <h2 class="h1 white_color">Our pricing Plans</h2>
             <article class="float-l">
                 <h3>Plus</h3>
                 <span>$10</span>
@@ -162,10 +179,10 @@
     <!-- End They said about us -->
 
     <!-- Start product information -->
-    <section class="product_info">
+    <section id="info" class="product_info">
         <div class="container">
             <h2 class="h1 tex_center">Product Information</h2>
-            <ul class="list_style info_list">
+            <ul class="list_style info_list white_color">
                 <li data-class="about" class="selected">About</li>
                 <li data-class="history">History</li>
                 <li data-class="specific">Specification</li>
@@ -194,7 +211,7 @@
     <!-- End product information -->
 
     <!-- Start footer -->
-    <footer>
+    <footer class="white_color">
         <div class="container">
             <section class="float-l">Copy right &copy; Mustafa Atamimi</section>
             <section> 
